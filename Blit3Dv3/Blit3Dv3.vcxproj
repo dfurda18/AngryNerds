@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C79E96D-7A57-4EBB-9660-01C35EB3D634}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Blit3Dv3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\Blit3DBaseFiles\Blit3D;.\Blit3DBaseFiles\GLEW;.\Blit3DBaseFiles\GLFW;.\Blit3DBaseFiles;.\Blit3DBaseFiles\STB;D:\box2d-master\include;D:\Programs\Lua\5.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Programs\Lua\5.1\lib;D:\box2d-master\build\bin\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath);.\Blit3DBaseFiles\Blit3D;.\Blit3DBaseFiles\GLEW;.\Blit3DBaseFiles\GLFW;.\Blit3DBaseFiles;.\Blit3DBaseFiles\STB;D:\Programs\Lua\5.1_64\include;D:\box2d-master\include</IncludePath>
+    <LibraryPath>$(LibraryPath);D:\Programs\Lua\5.1_64\lib;D:\box2d-master\build\bin\Debug</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\Blit3DBaseFiles\Blit3D;.\Blit3DBaseFiles\GLEW;.\Blit3DBaseFiles\GLFW;.\Blit3DBaseFiles;.\Blit3DBaseFiles\STB;D:\box2d-master\include;D:\Programs\Lua\5.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Programs\Lua\5.1\lib;D:\box2d-master\build\bin\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>.\Blit3DBaseFiles\Blit3D;.\Blit3DBaseFiles\GLEW;.\Blit3DBaseFiles\GLFW;.\Blit3DBaseFiles;.\Blit3DBaseFiles\STB;D:\box2d-master\include;D:\Programs\Lua\5.1_64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Programs\Lua\5.1_64\lib;D:\box2d-master\build\bin\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;_GLFW_USE_CONFIG_H;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Box2d.lib;lua51.lib;lua54.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;_GLFW_USE_CONFIG_H;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Box2d.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;_GLFW_USE_CONFIG_H;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Box2d.lib;lua51.lib;lua54.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;_GLFW_USE_CONFIG_H;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Box2d.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AlienEntity.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\AngelcodeFont.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\BFont.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\Blit3D.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\ByteSwap.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\glslprogram.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\glutils.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\Logger.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\RenderBuffer.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\ShaderManager.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\Sprite.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\Blit3D\TextureManager.cpp" />
+    <ClCompile Include="Blit3DBaseFiles\GLEW\glew.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\context.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\egl_context.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\init.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\input.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\monitor.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\vulkan.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\wgl_context.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\win32_init.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\win32_joystick.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\win32_monitor.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\win32_time.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\win32_tls.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\win32_window.c" />
+    <ClCompile Include="Blit3DBaseFiles\GLFW\window.c" />
+    <ClCompile Include="BlockEntity.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyContactListener.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="ShotEntity.cpp" />
+    <ClCompile Include="ShotsInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlienEntity.h" />
+    <ClInclude Include="Blit3DBaseFiles\GLEW\GL\glew.h" />
+    <ClInclude Include="Blit3DBaseFiles\GLEW\GL\wglew.h" />
+    <ClInclude Include="BlockEntity.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Cannon.h" />
+    <ClInclude Include="CollisionMask.h" />
+    <ClInclude Include="EdgeEntity.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="GroundEntity.h" />
+    <ClInclude Include="Meter.h" />
+    <ClInclude Include="MyContactListener.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="ShotEntity.h" />
+    <ClInclude Include="ShotsInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\fonts\electrolite.bin" />
+    <None Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\fonts\SyneMono.bin" />
+    <None Include="shots.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\Background.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\BigAsteroidSet.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\fonts\electrolite.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\fonts\SyneMono.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\MediumAsteroidSet.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\shield.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\shieldIcon.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\ship.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\Ship_Exploding.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\shot.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\shotInterface.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\SmallAsteroidSet.png" />
+    <Image Include="..\..\..\..\..\..\..\Portfolio\SpaceShooter\SpaceShooter\Blit3Dv3\Media\SpaceShooterFont.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

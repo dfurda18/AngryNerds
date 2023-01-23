@@ -1,0 +1,8 @@
+[2023-01-22 20:47:31][Info]	Context reports FSAA is available with 8samples
+[2023-01-22 20:47:31][Info]	Requesting FSAA with 8samples
+[2023-01-22 20:47:31][Info]	2 monitors detected, running on primary one
+[2023-01-22 20:47:32][Info]	Renderer: Intel(R) UHD Graphics 630
+[2023-01-22 20:47:32][Info]	OpenGL version supported: 4.6.0 - Build 31.0.101.2004
+[2023-01-22 20:47:32][Info]	Creating TextureManager with 31 maximum bound textures
+[2023-01-22 20:47:34][Info]	Terminated Blit3D
+[2023-01-22 20:47:34][Info]	TextureManager destroyed
